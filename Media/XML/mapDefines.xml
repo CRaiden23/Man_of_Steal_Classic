@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<!-- Game settings -->
+<!-- Each defines has a level, and each level has rooms -->
+<!-- <room												
+<!-- id: ID of the room, must be an integer and must be unique!
+<!-- file: filename of the room							
+<!-- flags: Bitwise format. Coming soon.
+<!-- image: name of the enumerated type
+<!-- N,E,S,W: Determines the room when you collide with the level transfer box 
+<!-- N_5, E_6, S_7, W_8: Same as above, but only links to the the same rooms that's defined here. 
+	 />-->
+
+<defines>
+	<level name="mansion" path="Media\Maps\mansion" R="0.25" G="0.5" B="0.5" A="0.7" mus_alert="mus_alert00_sound" mus_ambient="mus_ambient00_sound" mus_boss="mus_boss00_sound">
+		<room id="0" comment="start" 	file="start.txt" 	image="msn_room_start" startingRoom="true" N="4" E="1" E_6="2" >
+			<item id="0" x="250.0" y="550" type="gold" chance="100"/>
+			<item id="1" x="470.0" y="350" type="gold" chance="90"/>
+			<item id="2" x="820.0" y="630" type="gold" chance="80"/>
+			<item id="3" x="750.0" y="250" type="battery" chance="100"/>
+			<item id="4" x="302.0" y="290" type="battery" chance="100"/>
+			<patrol id="0" type="camera">
+				<node x="387" y="700"/>
+				<node x="640" y="640"/>
+				<node x="357" y="640"/>
+			</patrol>
+			<patrol id="1" type="guard">
+				<node x="640" y="640"/>
+				<node x="387" y="640"/>
+			</patrol>
+		</room>
+		<room id="1" comment="lobby"		file="lobby.txt"	 	image="msn_room_lobby" flags="" N="3" E="5" S="2" W="0">
+			<item id="0" x="302.0" y="290" type="battery" chance="100"/>
+			<item id="1" x="117.0" y="640" type="gold" chance="80"/>
+			<item id="2" x="820.0" y="630" type="gold" chance="80"/>
+			<patrol id="0" type="guard">
+				<node x="880" y="200"/>
+				<node x="880" y="640"/>
+				<node x="580" y="640"/>
+				<node x="580" y="200"/>
+			</patrol>
+		</room>
+		<room id="2" comment="patio"		file="patio.txt"	 	image="msn_room_patio" flags="" N="1" E="7" E_6="7" W_8="0">
+			<item id="0" x="143.0" y="204" type="gold" chance="12"/>
+			<item id="1" x="194.0" y="450" type="gold" chance="75"/>
+			<item id="2" x="330.0" y="526" type="gold" chance="100"/>
+			<patrol id="0" type="guard">
+				<node x="470" y="85"/>
+				<node x="470" y="245"/>
+				<node x="470" y="85"/>
+				<node x="216" y="85"/>
+			</patrol>
+			<patrol id="1" type="guard">
+				<node x="907" y="90"/>
+				<node x="907" y="333"/>
+				<node x="566" y="333"/>
+				<node x="566" y="78"/>
+			</patrol>
+			<patrol id="1" type="camera">
+				<node x="745" y="467"/>
+				<node x="700" y="450"/>
+				<node x="780" y="450"/>
+			</patrol>
+		</room>
+		<room id="3" comment="library"	file="library.txt"		image="msn_room_library" flags="" N="9" E="11" S="1" W="">
+			<item id="0" x="180.0" y="150" type="gold" chance="100"/>
+			<item id="1" x="850.0" y="335" type="gold" chance="90"/>
+			<item id="2" x="640.0" y="672" type="gold" chance="40"/>
+			<item id="3" x="569.0" y="448" type="gold" chance="40"/>
+			<item id="4" x="578.0" y="284" type="gold" chance="40"/>
+			<item id="5" x="380.0" y="111" type="gold" chance="40"/>
+			<patrol id="0" type="guard">
+				<node x="704" y="435"/>
+				<node x="832" y="435"/>
+				<node x="832" y="640"/>
+				<node x="832" y="435"/>
+			</patrol>
+			<patrol id="1" type="guard">
+				<node x="576" y="435"/>
+				<node x="192" y="435"/>
+				<node x="192" y="570"/>
+				<node x="576" y="570"/>
+			</patrol>
+			<patrol id="2" type="pitfall">
+				<node x="416" y="576"/>
+			</patrol>
+			<patrol id="3" type="armedguard">
+				<node x="164" y="571"/>
+				<node x="164W" y="560"/>
+			</patrol>
+		</room>
+		<room id="4" comment="hallway1" file="hallway1.txt" image="msn_room_hallway1" flags="" N="8" S="0" >
+			<item id="0" x="452.0" y="272" type="gold" chance="90"/>
+			<item id="1" x="331.0" y="429" type="gold" chance="12"/>
+			<item id="2" x="271.0" y="672" type="gold" chance="45"/>
+			<item id="3" x="793.0" y="613" type="gold" chance="1"/>
+			<item id="4" x="575.0" y="269" type="gold" chance="10"/>
+			<item id="5" x="575.0" y="269" type="gold" chance="25"/>
+			<patrol id="0" type="guard">
+				<node x="825.0" y="280.0"/>
+				<node x="825.0" y="600.0"/>
+				<node x="525.0" y="600.0"/>
+				<node x="825.0" y="600.0"/>
+			</patrol>	
+			<patrol id="1" type="pitfall">
+				<node x="576.0" y="256.0"/>
+			</patrol>			
+			<patrol id="2" type="armedguard">
+				<node x="240" y="576"/>
+				<node x="240" y="566"/>
+			</patrol>
+			<patrol id="3" type="armedguard">
+				<node x="305" y="576"/>
+				<node x="305" y="566"/>
+			</patrol>
+		</room>
+		<room id="5" comment="museum" file="museum.txt" image="msn_room_museum" flags="" N="11"	E="6" S="7" W="1">
+			<item id="0" x="864.0" y="192" type="gold" chance="25"/>
+			<item id="1" x="672.0" y="96" type="gold" chance="30"/>
+			<item id="2" x="288.0" y="416" type="gold" chance="70"/>
+			<item id="3" x="160.0" y="640" type="gold" chance="20"/>
+			<item id="4" x="864.0" y="640" type="gold" chance="90"/>
+			<item id="5" x="640.0" y="512" type="battery" chance="100"/>
+			<patrol id="0" type="guard">
+				<node x="896.0" y="416.0"/>
+				<node x="640.0" y="416.0"/>
+				<node x="640.0" y="182.0"/>
+				<node x="896.0" y="182.0"/>
+				<node x="640.0" y="182.0"/>
+				<node x="640.0" y="416.0"/>
+			</patrol>
+			<patrol id="1" type="guard">
+				<node x="416.0" y="640.0"/>
+				<node x="416.0" y="192.0"/>
+				<node x="192.0" y="192.0"/>
+				<node x="192.0" y="640.0"/>
+			</patrol>
+			<patrol id="2" type="armedguard">
+				<node x="800.0" y="628.0"/>
+				<node x="750.0" y="628.0"/>
+			</patrol>
+		</room>
+		<room id="6" comment="vault" file="vault.txt" image="msn_room_vault" bossRoom="true"	W="5">
+			<patrol id="0" type="electricfloor">
+				<node x="64" y="448"/>
+			</patrol>
+			<patrol id="1" type="electricfloor">
+				<node x="64" y="384"/>
+			</patrol>
+			<patrol id="2" type="bossgrenadier">
+				<node x="832" y="416"/>
+			</patrol>
+		</room>
+		<room id="7" comment="riverside" file="riverside.txt" image="msn_room_riverside" flags="" N="5" W="2" W_8="2">
+			<item id="0" x="437.0" y="224" type="gold" chance="90"/>
+			<item id="1" x="298.0" y="224" type="gold" chance="90"/>
+			<item id="2" x="632.0" y="376" type="gold" chance="90"/>
+			<patrol id="0" type="guard">
+				<node x="668.0" y="297.0"/>
+				<node x="668.0" y="526.0"/>
+				<node x="827.0" y="526.0"/>
+				<node x="827.0" y="650.0"/>
+				<node x="408.0" y="650.0"/>
+				<node x="666.0" y="536.0"/>
+			</patrol>
+			<patrol id="1" type="guard">
+				<node x="828.0" y="77.0"/>
+				<node x="828.0" y="223.0"/>
+				<node x="672.0" y="223.0"/>
+				<node x="828.0" y="223.0"/>
+			</patrol>
+			<patrol id="2" type="guard">
+				<node x="480.0" y="224.0"/>
+				<node x="192.0" y="224.0"/>
+				<node x="192.0" y="64.0"/>
+				<node x="192.0" y="224.0"/>
+			</patrol>
+			<patrol id="3" type="armedguard">
+				<node x="768.0" y="576.0"/>
+				<node x="760.0" y="576.0"/>
+			</patrol>
+		</room>
+		<room id="8" comment="quarters" file="quarters.txt" image="msn_room_quarters" flags="" N="10" S="4" >
+				<item id="0" x="576.0" y="448" type="gold" chance="50"/>
+				<item id="1" x="544.0" y="224" type="gold" chance="75"/>
+				<item id="2" x="928.0" y="448" type="battery" chance="100"/>
+				<item id="3" x="960.0" y="640" type="gold" chance="10"/>
+				<item id="4" x="832.0" y="640" type="gold" chance="100"/>
+				<item id="5" x="353.0" y="476" type="gold" chance="75"/>				
+				<item id="6" x="115.0" y="377" type="gold" chance="75"/>				
+				<item id="7" x="115.0" y="377" type="gold" chance="10"/>				
+				<item id="8" x="115.0" y="207" type="gold" chance="45"/>		
+				<item id="9" x="115.0" y="207" type="gold" chance="20"/>
+			<patrol id="0" type="guard">
+				<node x="832.0" y="609.0"/>
+				<node x="832.0" y="608.5"/>
+				<node x="256.0" y="609.0"/>
+				<node x="256.0" y="608.5"/>
+			</patrol>
+			<patrol id="1" type="guard">
+				<node x="480.0" y="479.0"/>
+				<node x="704.0" y="479.0"/>
+				<node x="576.0" y="352.0"/>
+			</patrol>
+			<patrol id="2" type="armedguard">
+				<node x="176.0" y="607.0"/>
+				<node x="180.0" y="607.0"/>
+			</patrol>			
+			<patrol id="3" type="pitfall">
+				<node x="800.0" y="416.0"/>
+			</patrol>	
+			<patrol id="4" type="pitfall">
+				<node x="864.0" y="416.0"/>
+			</patrol>	
+			<patrol id="5" type="guard">
+				<node x="348.0" y="344.0"/>
+				<node x="348.0" y="462.0"/>
+				<node x="190.0" y="462.0"/>
+				<node x="190.0" y="344.0"/>
+			</patrol>
+		</room>
+		<room id="9" comment="tunnels1" file="tunnel1.txt" image="msn_room_tunnels1" flags="" E="999" S="3" W="10">
+			<item id="0" x="352.0" y="416.0" type="gold" chance="90"/>
+			<item id="1" x="608.0" y="288.0" type="gold" chance="90"/>
+			<item id="2" x="864.0" y="224.0" type="battery" chance="100"/>
+			<item id="3" x="864.0" y="640.0" type="gold" chance="15"/>
+			<item id="4" x="439.0" y="606.0" type="gold" chance="15"/>			
+			<item id="5" x="377.0" y="532.0" type="gold" chance="15"/>			
+			<item id="6" x="525.0" y="598.0" type="gold" chance="15"/>
+			<item id="7" x="687.0" y="295.0" type="gold" chance="15"/>
+			<patrol id="0" type="guard">
+				<node x="608.0" y="65.0"/>
+				<node x="224.0" y="65.0"/>
+				<node x="224.0" y="305.0"/>
+				<node x="608.0" y="305.0"/>
+			</patrol>
+			<patrol id="1" type="armedguard">
+				<node x="286.0" y="652.0"/>
+				<node x="286.0" y="640.0"/>
+			</patrol>			
+			<patrol id="2" type="armedguard">
+				<node x="690.0" y="456.0"/>
+				<node x="650.0" y="456.0"/>
+			</patrol>
+			<patrol id="3" type="camera">
+				<node x="755.0" y="605.0"/>
+				<node x="676.0" y="550.0"/>
+				<node x="819.0" y="550.0"/>
+			</patrol>
+		</room>
+		<room id="10" comment="tunnels2" file="tunnel2.txt" image="msn_room_tunnels2" flags="" E="9" S="8">
+			<item id="0" x="868.0" y="393.0" type="battery" chance="100"/>
+			<item id="1" x="923.0" y="528.0" type="gold" chance="100"/>
+			<item id="2" x="923.0" y="560.0" type="gold" chance="100"/>
+			<item id="3" x="923.0" y="592.0" type="gold" chance="100"/>
+			<item id="4" x="650.0" y="650.0" type="gold" chance="25"/>
+			<item id="5" x="308.0" y="603.0" type="gold" chance="80"/>
+			<item id="6" x="240.0" y="538.0" type="gold" chance="75"/>
+			<item id="7" x="303.0" y="463.0" type="gold" chance="33"/>
+			<patrol id="0" type="guard">
+				<node x="272.0" y="532.0"/>
+				<node x="385.0" y="641.0"/>
+				<node x="753.0" y="641.0"/>
+				<node x="385.0" y="641.0"/>
+			</patrol>	
+			<patrol id="1" type="guard">
+				<node x="367.0" y="364.0"/>
+				<node x="574.0" y="364.0"/>
+				<node x="574.0" y="359.0"/>
+				<node x="577.0" y="359.0"/>
+				<node x="577.0" y="359.0"/>
+				<node x="754.0" y="364.0"/>
+			</patrol>	
+			<patrol id="2" type="armedguard">
+				<node x="578.0" y="270.0"/>
+				<node x="578.0" y="280.0"/>
+			</patrol>	
+			<patrol id="3" type="pitfall">
+				<node x="576.0" y="160.0"/>
+			</patrol>	
+		</room>
+		<room id="11" comment="storage" file="storage.txt" image="msn_room_storage" flags=""  S="5" W="3">
+			<item id="0" x="928.0" y="224.0" type="gold" chance="50"/>
+			<item id="1" x="928.0" y="352.0" type="battery" chance="100"/>
+			<item id="2" x="896.0" y="608.0" type="gold" chance="70"/>
+			<patrol id="0" type="guard">
+				<node x="960.0" y="100.0"/>
+				<node x="800.0" y="100.0"/>
+			</patrol>
+			<patrol id="1" type="guard">
+				<node x="736.0" y="192.0"/>
+				<node x="736.0" y="383.0"/>
+				<node x="928.0" y="383.0"/>
+				<node x="928.0" y="544.0"/>
+				<node x="736.0" y="544.0"/>
+			</patrol>
+			<patrol id="2" type="guard">
+				<node x="416.0" y="287.0"/>
+				<node x="640.0" y="287.0"/>
+			</patrol>
+			<patrol id="3" type="guard">
+				<node x="896.0" y="673.0"/>
+				<node x="160.0" y="673.0"/>
+			</patrol>
+		</room>
+		<room id="999" comment="endlevel" file="start.txt" image="msn_room_start" flags="" E="10">
+		</room>
+	</level>
+</defines>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tileset version="1.2" tiledversion="1.2.5" name="Tileset" tilewidth="32" tileheight="128" tilecount="40" columns="0">
+ <grid orientation="orthogonal" width="1" height="1"/>
+ <tile id="0">
+  <image width="32" height="32" source="../Floor1.png"/>
+ </tile>
+ <tile id="1">
+  <image width="32" height="128" source="../LCorner.png"/>
+ </tile>
+ <tile id="2">
+  <image width="32" height="128" source="../RCorner.png"/>
+ </tile>
+ <tile id="5">
+  <image width="32" height="32" source="../DownBorder.png"/>
+ </tile>
+ <tile id="6">
+  <image width="32" height="32" source="../LeftBorder.png"/>
+ </tile>
+ <tile id="7">
+  <image width="32" height="32" source="../RightBorder.png"/>
+ </tile>
+ <tile id="8">
+  <image width="32" height="32" source="../UpBorder.png"/>
+ </tile>
+ <tile id="9">
+  <image width="32" height="128" source="../LCornerSolid.png"/>
+ </tile>
+ <tile id="10">
+  <image width="32" height="128" source="../RCornerSolid.png"/>
+ </tile>
+ <tile id="11">
+  <image width="32" height="32" source="../LLowBorderCorner.png"/>
+ </tile>
+ <tile id="12">
+  <image width="32" height="32" source="../RLowBorderCorner.png"/>
+ </tile>
+ <tile id="13">
+  <image width="32" height="32" source="../WallDown.png"/>
+ </tile>
+ <tile id="14">
+  <image width="32" height="32" source="../WallRight.png"/>
+ </tile>
+ <tile id="15">
+  <image width="32" height="32" source="../Block.png"/>
+ </tile>
+ <tile id="16">
+  <image width="32" height="32" source="../Block2_N.png"/>
+ </tile>
+ <tile id="17">
+  <image width="32" height="32" source="../Block2_Corner_In_Left.png"/>
+ </tile>
+ <tile id="18">
+  <image width="32" height="32" source="../Block2_Corner_In_Right.png"/>
+ </tile>
+ <tile id="19">
+  <image width="32" height="32" source="../Block2_Corner_Out_Upper_Left.png"/>
+ </tile>
+ <tile id="20">
+  <image width="32" height="32" source="../Block2_Corner_Out_Upper_Right.png"/>
+ </tile>
+ <tile id="21">
+  <image width="32" height="32" source="../LCornerWallFloor1.png"/>
+ </tile>
+ <tile id="22">
+  <image width="32" height="64" source="../LCornerShort.png"/>
+ </tile>
+ <tile id="23">
+  <image width="32" height="64" source="../RCornerShort.png"/>
+ </tile>
+ <tile id="24">
+  <image width="32" height="32" source="../Block2_S.png"/>
+ </tile>
+ <tile id="25">
+  <image width="32" height="32" source="../Block2_E.png"/>
+ </tile>
+ <tile id="26">
+  <image width="32" height="32" source="../Block2_W.png"/>
+ </tile>
+ <tile id="27">
+  <image width="32" height="64" source="../LCornerShortOut.png"/>
+ </tile>
+ <tile id="28">
+  <image width="32" height="64" source="../RCornerShortOut.png"/>
+ </tile>
+ <tile id="29">
+  <image width="32" height="64" source="../LCornerShortIn.png"/>
+ </tile>
+ <tile id="30">
+  <image width="32" height="64" source="../RCornerShortIn.png"/>
+ </tile>
+ <tile id="31">
+  <image width="32" height="32" source="../Block2_Corner_Out_Lower_Right.png"/>
+ </tile>
+ <tile id="32">
+  <image width="32" height="32" source="../Block2_Corner_Out_Lower_Left.png"/>
+ </tile>
+ <tile id="33">
+  <image width="32" height="32" source="../RCornerWallFloor1.png"/>
+ </tile>
+ <tile id="34">
+  <image width="32" height="32" source="../Block2_Corner_In_Left_2.png"/>
+ </tile>
+ <tile id="35">
+  <image width="32" height="32" source="../Block2_Corner_In_Right_2.png"/>
+ </tile>
+ <tile id="36">
+  <image width="32" height="32" source="../Floor2.png"/>
+ </tile>
+ <tile id="37">
+  <image width="32" height="32" source="../Floor3.png"/>
+ </tile>
+ <tile id="38">
+  <image width="32" height="32" source="../LCornerWallFloor2.png"/>
+ </tile>
+ <tile id="39">
+  <image width="32" height="32" source="../RCornerWallFloor2.png"/>
+ </tile>
+ <tile id="40">
+  <image width="32" height="32" source="../LCornerWallFloor3.png"/>
+ </tile>
+ <tile id="41">
+  <image width="32" height="32" source="../RCornerWallFloor3.png"/>
+ </tile>
+</tileset>

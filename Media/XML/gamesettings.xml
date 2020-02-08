@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!-- Game settings -->
+
+<settings>
+	<game name="Man of Steal" />
+   <renderer width="1024" height="768"/>
+   
+   <!-- font file -->
+   <font file="Media\Fonts\PressStart2P_24.spritefont"/>
+
+   <!-- sprites -->
+   
+   <sprites path="Media\Images">
+     <sprite name="tile" file="tile" ext ="png" frames="3"/>
+     <sprite name="player" file="Player\player" ext ="png" frames="28"/>
+     <sprite name="turret" file="turret.png"/>
+	 <sprite name="trap_pitfall" file="Enemies\Traps\Pitfall" ext="png" frames="2" />
+	 <sprite name="trap_electric" file="Enemies\Traps\ShockFloor" ext="png" frames="5"/>
+	 <sprite name="camera" file="Enemies\Camera\camera" ext="png" frames="3" />
+	 <sprite name="guard" file="Enemies\Guards\guard" ext ="png" frames="8"/>
+	 <sprite name="armedguard" file="Enemies\Guards\aguard" ext ="png" frames="4"/>
+	 
+	 
+     <sprite name="greenline" file="greenline.png"/>
+	 <sprite name="blueline"  file="blueline.png"/>
+     <sprite name="bullet" file="bullet.png"/>
+     <sprite name="bullet2" file="bullet2.png"/>
+     <sprite name="bulletG" file="bulletG" ext ="png" frames="3"/>
+     <sprite name="smoke" file="graysmoke.png"/>
+     <sprite name="spark" file="spark.png"/>
+     <sprite name="explosion" file="FX\Explosion\Explosion" ext="png" frames="10"/>
+	 
+	 <sprite name="moveUI" file="moveUI" ext ="png" frames="4"/>
+	 <sprite name="msn_room_start" file="Maps\mansion\l1_start_id_0.png"/>
+	 <sprite name="msn_room_lobby" file="Maps\mansion\l1_id_1_lobby.png"/>
+	 <sprite name="msn_room_patio" file="Maps\mansion\l1_id_2_patio.png"/>
+	 <sprite name="msn_room_library" file="Maps\mansion\l1_id_3_library.png"/>
+	 <sprite name="msn_room_hallway1" file="Maps\mansion\l1_id_4_hallway1.png"/>
+	 <sprite name="msn_room_museum" file="Maps\mansion\l1_id_5_museum.png"/>
+	 <sprite name="msn_room_vault" file="Maps\mansion\l1_id_6_vault.png"/>
+	 <sprite name="msn_room_riverside" file="Maps\mansion\l1_id_7_riverside.png"/>
+	 <sprite name="msn_room_quarters" file="Maps\mansion\l1_id_8_quarters.png"/>
+	 <sprite name="msn_room_tunnels1" file="Maps\mansion\l1_id_9_tunnels1.png"/>
+	 <sprite name="msn_room_tunnels2" file="Maps\mansion\l1_id_10_tunnels2.png"/>
+	 <sprite name="msn_room_storage" file="Maps\mansion\l1_id_11_storage.png"/>
+	 <sprite name="boxUI" file="boxUI.png"/>
+	 <sprite name="hpUI" file="hpUI" ext ="png" frames="4"/>
+	 <sprite name="gold" file="gold" ext ="png" frames="10"/>
+	 <sprite name="batteryP" file="batteryP.png"/>
+	 <sprite name="msg_dead" file="UI\msg_death.png"/>
+	 <sprite name="ui_controls" file="UI\Controls.png"/>
+	 <sprite name="ui_screen_title" file="UI\UI_Screen_Title" ext="png" frames="3"/>
+	 
+	 <sprite name="numA" file="Numbers\numA" ext ="png" frames="10"/>
+	 <sprite name="numB" file="Numbers\numB" ext ="png" frames="10"/>
+	 <sprite name="numC" file="Numbers\numC" ext ="png" frames="10"/>
+	 <sprite name="numD" file="Numbers\numD" ext ="png" frames="10"/>
+	 <sprite name="nightVision" file="nightVision" ext ="png" frames="4"/>
+	 <sprite name="nightVisionRedux" file="NVGScreen" ext ="png" frames="4"/>
+	 <sprite name="battery" file="battery" ext ="png" frames="7"/>
+	 <sprite name="scoreUI" file="scoreUI.png"/>
+	 <sprite name="alert" file="UI\alert.png"/>
+	 <sprite name="pointer" file="pointer.png"/>
+   </sprites>
+
+   <!-- sound -->
+  
+   <sounds  path="Media\Sounds">
+ 	 <sound file="silence.wav" instances="8"/>
+     <sound file="punchWhiff.wav" instances="8"/>
+     <sound file="punchWall.wav" instances="1"/>
+     <sound file="ow.wav" instances="8"/>
+     <sound file="clang.wav" instances="8"/>
+	 <sound file="money.wav" instances="4"/>
+	 <sound file="FX\Explosions\ExplodeSmall.wav" instances="12"/>
+	 <sound file="Music\song1.wav" instances="1"/>
+	 <sound file="Music\song2.wav" instances="1"/>
+	 <sound file="Music\song3.wav" instances="1"/>
+	 <sound file="Music\song4.wav" instances="1"/>
+	 <sound file="Music\song5.wav" instances="1"/>
+	 <sound file="Music\mus_ambient00.wav" instances="1"/>
+	 <sound file="Music\mus_alert00.wav" instances="1"/>
+	 <sound file="Music\mus_boss00.wav" instances="1"/>
+	 <sound file="Player\bAAAUGH.wav" instances="8"/>
+	 <sound file="Player\BUHAU.wav" instances="8"/>
+	 <sound file="Player\HOAH.wav" instances="8"/>
+	 <sound file="Player\wooooaaaa.wav" instances="8"/>
+	 <sound file="Enemy\shMAAAAS.wav" instances="8"/>
+	 <sound file="Enemy\EHEH.wav" instances="8"/>
+	 <sound file="Enemy\OOOOOFFFFF.wav" instances="8"/>
+	 <sound file="Enemy\OOOOOFFFFF2.wav" instances="8"/>
+	 <sound file="night_vision.wav" instances="2"/>
+	 <sound file="night_vision2.wav" instances="2"/>	 
+	 <sound file="spotted.wav" instances="8"/>
+	 <sound file="batteryP.wav" instances="8"/>
+	 <sound file="Enemy\Pitfall\ImpactMetal.wav" instances="8"/>
+	 <sound file="Enemy\Pitfall\ImpactWood.wav" instances="8"/>
+	 <sound file="gunshot.wav" instances="8"/>
+	 <sound file="Blip_Select.wav" instances="8"/>
+	 <sound file="EndingMenu_Music.wav" instances="1"/>
+	 <sound file="Enter_Key.wav" instances="1"/>
+   </sounds>
+</settings>

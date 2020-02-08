@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tileset version="1.2" tiledversion="1.2.5" name="Furniture" tilewidth="128" tileheight="192" tilecount="4" columns="0">
+ <grid orientation="orthogonal" width="1" height="1"/>
+ <tile id="0">
+  <image width="96" height="128" source="../Furniture/Furniture_DisplayCase_01.png"/>
+ </tile>
+ <tile id="1">
+  <image width="96" height="128" source="../Furniture/Furniture_DisplayCase_02.png"/>
+ </tile>
+ <tile id="2">
+  <image width="128" height="192" source="../Furniture/Desk_Lobby.png"/>
+ </tile>
+ <tile id="3">
+  <image width="96" height="64" source="../Furniture/Sofa_Back.png"/>
+ </tile>
+</tileset>
